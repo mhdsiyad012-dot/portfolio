@@ -24,6 +24,16 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ga9GfezzeowGqLt2w",
+      });
+   })();
+</script>
 </head>
 
 
@@ -144,11 +154,11 @@
 
                     <div class="social-links">
 
-                        <a href="#" aria-label="GitHub">
+                        <a href="https://github.com/mhdsiyad012-dot" aria-label="GitHub">
                             GitHub
                         </a>
 
-                        <a href="#" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/muhammed-siyad-a6a916427" aria-label="LinkedIn">
                             LinkedIn
                         </a>
 
@@ -726,9 +736,11 @@
 
                     <button
                         type="submit"
-                        class="btn primary-btn">
+                        class="btn primary-btn"
+                        onclick="sendEmail()">
 
                         Send Message →
+                  
 
                     </button>
 
@@ -806,7 +818,7 @@
         </div>
 
     </footer>
-
+<script src="intex.js"></script>
 
 </body>
 
