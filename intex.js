@@ -5,6 +5,7 @@ function sendEmail() {
      
         message: document.querySelector("#message").value,
     };
+    
 
     emailjs
     .send("service_jhrgp0j", "template_mre6h7n", templateParams)
